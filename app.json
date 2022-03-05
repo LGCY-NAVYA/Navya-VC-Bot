@@ -10,7 +10,7 @@
     "repository": "https://github.com/LgcyAlex/LGCY-USERBOT-VC-PLAYER",
     "env": {
         "SESSION": {
-            "description": "Pyrogram String Session. Get from @",
+            "description": "Pyrogram String Session. Get from @LGcY_STRING_ROBOT",
             "required": true
         },
         "API_ID": {
