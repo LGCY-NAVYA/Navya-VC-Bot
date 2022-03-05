@@ -85,7 +85,7 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(filters.command(["play"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["play", "yt", "/PLay", "/yt"], prefixes=f"{HNDLR}"))
 async def play(client, m: Message):
  if GRPPLAY or (m.from_user and m.from_user.is_contact) or m.outgoing:
     replied = m.reply_to_message
@@ -93,7 +93,7 @@ async def play(client, m: Message):
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
-            huehue = await replied.reply("**𝑺𝒆𝒂𝒓𝒄𝒉𝒊𝒏𝒈**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100% ...**")
+            huehue = await replied.reply("**𝑷𝒓𝒐𝒄𝒆𝒔𝒔𝒊𝒏𝒈**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -142,7 +142,7 @@ async def play(client, m: Message):
             await m.reply("Reply to Audio File or provide something for Searching ...")
         else:
             await m.delete()
-            huehue = await m.reply("🔎 Searching...")
+            huehue = await m.reply("𝑺𝒆𝒂𝒓𝒄𝒉𝒊𝒏𝒈**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100% ...")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -206,10 +206,10 @@ async def stream(client, m: Message):
  if GRPPLAY or (m.from_user and m.from_user.is_contact) or m.outgoing:
    chat_id = m.chat.id
    if len(m.command) < 2:
-      await m.reply("`Give A Link/LiveLink/.m3u8 URL/YTLink to Play Audio from 🎶`")
+      await m.reply("**Give A Link/LiveLink/.m3u8 URL/YTLink to Play Audio from 🎶**")
    else: 
       link = m.text.split(None, 1)[1]
-      huehue = await m.reply("`Trying to Play 📻`")
+      huehue = await m.reply("**Trying to Play 📻**")
 
       # Filtering out YouTube URL's
       regex = r"^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+"
@@ -225,7 +225,7 @@ async def stream(client, m: Message):
       else:
          if chat_id in QUEUE:
             pos = add_to_queue(chat_id, "Radio 📻", livelink, link, "Audio", 0)
-            await huehue.edit(f"Queued at **#{pos}**")
+            await huehue.edit(f"𝑸𝒖𝒆𝒖𝒆𝒅 𝒂𝒕 **#{pos}**")
          else:
             try:
                await call_py.join_group_call(
@@ -250,7 +250,7 @@ async def vplay(client, m: Message):
     if replied:
         if replied.video or replied.document:
             await m.delete()
-            huehue = await replied.reply("**🔄 Processing**")
+            huehue = await replied.reply("**𝑷𝒓𝒐𝒄𝒆𝒔𝒔𝒊𝒏𝒈**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%**")
             dl = await replied.download()
             link = replied.link
             if len(m.command) < 2:
@@ -311,18 +311,18 @@ async def vplay(client, m: Message):
     else:
         if len(m.command) < 2:
             await m.reply(
-                "**Reply to Audio File or provide something for Searching ...**"
+                "**𝑹𝒆𝒑𝒍𝒚 𝒕𝒐 𝑨𝒖𝒅𝒊𝒐 𝑭𝒊𝒍𝒆 𝒐𝒓 𝒑𝒓𝒐𝒗𝒊𝒅𝒆 𝒔𝒐𝒎𝒆𝒕𝒉𝒊𝒏𝒈 𝒇𝒐𝒓 𝑺𝒆𝒂𝒓𝒄𝒉𝒊𝒏𝒈 ...**"
             )
         else:
             await m.delete()
-            huehue = await m.reply("**🔎 Searching...")
+            huehue = await m.reply("**𝑺𝒆𝒂𝒓𝒄𝒉𝒊𝒏𝒈**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100% ...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
             hmmm = HighQualityVideo()
             if search == 0:
                 await huehue.edit(
-                    "**Didn't Find Anything for the Given Query🤷‍♀️**"
+                    "**Didn't Find Anything for the Given Query**"
                 )
             else:
                 songname = search[0]
@@ -381,12 +381,12 @@ async def vstream(client, m: Message):
  if GRPPLAY or (m.from_user and m.from_user.is_contact) or m.outgoing:
    chat_id = m.chat.id
    if len(m.command) < 2:
-      await m.reply("`Give A Link/LiveLink/.m3u8 URL/YTLink to Stream from 🎶`")
+      await m.reply("𝑮𝒊𝒗𝒆 𝑨 𝑳𝒊𝒏𝒌/𝑳𝒊𝒗𝒆𝑳𝒊𝒏𝒌/.𝒎3𝒖8 𝑼𝑹𝑳/𝒀𝑻𝑳𝒊𝒏𝒌 𝒕𝒐 𝑺𝒕𝒓𝒆𝒂𝒎 𝒇𝒓𝒐𝒎 🎶")
    else:
       if len(m.command)==2:
          link = m.text.split(None, 1)[1]
          Q = 720
-         huehue = await m.reply("`Trying to Stream 💭`")
+         huehue = await m.reply("𝑻𝒓𝒚𝒊𝒏𝒈 𝒕𝒐 𝑺𝒕𝒓𝒆𝒂𝒎 💭")
       elif len(m.command)==3:
          op = m.text.split(None, 1)[1]
          link = op.split(None, 1)[0]
@@ -395,8 +395,8 @@ async def vstream(client, m: Message):
             Q = int(quality)
          else:
             Q = 720
-            await m.reply("`Only 720, 480, 360 Allowed` \n`Now Streaming in 720p`")
-         huehue = await m.reply("`Trying to Stream 💭`")
+            await m.reply("𝑶𝒏𝒍𝒚 720, 480, 360 𝑨𝒍𝒍𝒐𝒘𝒆𝒅 \n𝑵𝒐𝒘 𝑺𝒕𝒓𝒆𝒂𝒎𝒊𝒏𝒈 𝒊𝒏 720𝒑")
+         huehue = await m.reply("𝑻𝒓𝒚𝒊𝒏𝒈 𝒕𝒐 𝑺𝒕𝒓𝒆𝒂𝒎 💭")
       else:
          await m.reply("`!vstream {link} {720/480/360}`")
 
@@ -413,8 +413,8 @@ async def vstream(client, m: Message):
          await huehue.edit(f"**YTDL ERROR ⚠️** \n\n`{ytlink}`")
       else:
          if chat_id in QUEUE:
-            pos = add_to_queue(chat_id, "Live Stream 📺", livelink, link, "Video", Q)
-            await huehue.edit(f"Queued at **#{pos}**")
+            pos = add_to_queue(chat_id, "𝑳𝒊𝒗𝒆 𝑺𝒕𝒓𝒆𝒂𝒎 📺", livelink, link, "Video", Q)
+            await huehue.edit(f"𝑸𝒖𝒆𝒖𝒆𝒅 𝒂𝒕 **#{pos}**")
          else:
             if Q==720:
                hmmm = HighQualityVideo()
@@ -432,8 +432,8 @@ async def vstream(client, m: Message):
                   ),
                   stream_type=StreamType().pulse_stream,
                )
-               add_to_queue(chat_id, "Live Stream 📺", livelink, link, "Video", Q)
-               await huehue.edit(f"Started **[Live Stream 📺]({link})** in `{chat_id}`", disable_web_page_preview=True)
+               add_to_queue(chat_id, "𝑳𝒊𝒗𝒆 𝑺𝒕𝒓𝒆𝒂𝒎 📺", livelink, link, "Video", Q)
+               await huehue.edit(f"𝑺𝒕𝒂𝒓𝒕𝒆𝒅 **[𝑳𝒊𝒗𝒆 𝑺𝒕𝒓𝒆𝒂𝒎 📺]({link})** in `{chat_id}`", disable_web_page_preview=True)
             except Exception as ep:
                await huehue.edit(f"`{ep}`")
 
@@ -514,4 +514,4 @@ async def playlist(client, m: Message):
                 QUE = QUE + "\n" + f"**#{x}** - [{hmm}]({hmmm}) | `{hmmmm}`\n"
             await m.reply(QUE, disable_web_page_preview=True)
     else:
-        await m.reply("🙄__Doesn't play anything__")
+        await m.reply("__𝑫𝒐𝒆𝒔𝒏❜𝒕 𝒑𝒍𝒂𝒚 𝒂𝒏𝒚𝒕𝒉𝒊𝒏𝒈__")
