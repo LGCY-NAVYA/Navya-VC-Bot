@@ -39,16 +39,7 @@
 </h2>
 
 <p align="center">
-<a href="https://dashboard.heroku.com/new?template=https://github.com/LgcyAlex/LGCY_ALEX_VC_Player"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>  
-
-
-
-
-
-
-# Special Thanks
-- [Sunil](https://t.me/Sushil8xop)
-- [Group](https://t.me/Clan8Xofficial)
+<a href="https://dashboard.heroku.com/new?template=https://github.com/LgcyAlex/LGCY-USERBOT-VC-PLAYER"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>  
 
 
 ### Support & Updates 
