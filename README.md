@@ -1,58 +1,55 @@
-# Telegram Voice Chat User Bot
-A Telegram Userbot to play Audio and Video songs / files in Telegram Voice Chats.
+<h2 align="centre">ŁGcY・AŁEX Music Player</h2>
 
-It's made with [PyTgCalls](https://github.com/pytgcalls/pytgcalls) and [Pyrogram](https://github.com/pyrogram/pyrogram)
+<p align="center">
+  <img src="lgcyalex12.jpg">
+</p>
 
-# Environment Variables
-- `API_ID`
-- `API_HASH`
-- `SESSION` - A Pyrogram String Session. Get one from [Here](https://replit.com/@ZauteKm/GenerateStringSession)
-- `HNDLR` - Your Userbot Handler (Default is !)
-- `GROUP_MODE` - if Value is set to `True`, Anyone can Play. Set it to `False` to restrict play access to Sudo Users/Contacts only.
+<h3>Requirements 📝</h3>
 
-## Deployment
+- FFmpeg (Latest)
+- NodeJS [nodesource.com](https://nodesource.com/) (NodeJS 17+)
+- Python (3.10+)
+- [PyTgCalls](https://github.com/pytgcalls/pytgcalls) (Lastest)
+- [2nd Telegram Account](https://telegram.org/blog/themes-accounts#multiple-accounts) (needed for userbot)
 
-### Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://telegram.dog/XTZ_HerokuBot?start=bHVzaGFpbXVzaWMvdmMtdXNlcmJvdCBtYXN0ZXI)
-<a href="https://youtu.be/1IFe5wBxOL4"><img src="https://img.shields.io/badge/How%20to%20Deploy%20on%20Heroku-blue.svg?logo=Youtube"></a>
-<a href="https://youtu.be/1IFe5wBxOL4"><img src="https://img.shields.io/youtube/views/1IFe5wBxOL4?style=social"></a>
+### Commands 🛠
+#### For all in group
+- `/play` - reply to youtube url or song file to play song
+- `/vplay` - reply to youtube url or song file to play video
+#### Admins only
+- `/pause` - pause song play
+- `/resume` - resume song play
+- `/skip` - play next song
+- `/end` - stop music play
+- `/vstop` - stop video stream
+- `/vpause` - pause video stream
+- `/vresume` - resume video stream
+- `/vskip` - skip video stream
 
-### Local Deploy
-1) Installing NodeJS
-```bash
-curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-sudo apt-get install -y nodejs
-```
+### Commands for Sudo Users ⚔️
+- /rmw - to clean storage
+- /rmd - to clean download sotrage
 
-2) Installing Dependencies
-```bash
-sudo apt-get install git ffmpeg -y
-sudo apt-get install youtube-dl -y
-```
+# String Session :
 
-3) Cloning the Repo
-```bash
-git clone https://github.com/lushaimusic/vc-userbot
-cd vc-userbot
-```
+- [𝙇𝙂𝙘𝙔・𝙎𝙏𝙍𝙄𝙉𝙂 𝙂𝙀𝙉𝙀𝙍𝘼𝙏𝙊𝙍](https://t.me/LGcY_STRING_ROBOT)
 
-4) Rename `example.env` to `.env` and Fill in the Environment Variables
+<h2 align="center">
+   Deploy
+</h2>
 
-5) Installing Requirements
-```bash
-pip3 install -U -r requirements.txt
-```
+<p align="center">
+<a href="https://dashboard.heroku.com/new?template=https://github.com/LgcyAlex/LGCY_ALEX_VC_Player"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>  
 
-6) Run the Bot
-```bash
-python3 main.py
-```
 
-## Commands and Usage
-1) Start the Userbot, check if the Userbot is running by `!ping`.
-2) Commands of this userbot are accessible to and can be used by the Account itself and it's Contacts.
-3) Check `!help` for commands.
 
-## Credits ✨
-- [Dan](https://github.com/delivrance) for [Pyrogram](https://github.com/pyrogram/pyrogram)
-- [Laky](https://github.com/Laky-64) for [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
+
+
+
+# Special Thanks
+- [Sunil](https://t.me/Sushil8xop)
+- [Group](https://t.me/Clan8Xofficial)
+
+
+### Support & Updates 
+<a href="https://t.me/LGCY_OFFICIAL"><img src="https://img.shields.io/badge/Join-Group%20Support-red.svg?style=for-the-badge&logo=Telegram"></a> 
