@@ -7,10 +7,10 @@
         "VCBot",
         "MusicPlayer"
     ],
-    "repository": "https://github.com/lushaimusic/vc-userbot",
+    "repository": "https://github.com/LgcyAlex/LGCY-USERBOT-VC-PLAYER",
     "env": {
         "SESSION": {
-            "description": "Pyrogram String Session. Get from https://replit.com/@ZauteKm/GenerateStringSession",
+            "description": "Pyrogram String Session. Get from @",
             "required": true
         },
         "API_ID": {
