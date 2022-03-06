@@ -62,7 +62,7 @@ async def song(client, message: Message):
         with YoutubeDL(opts) as ytdl:
             ytdl_data = ytdl.extract_info(mo, download=True)
     except Exception as e:
-        await pablo.edit(f"**Failed To Download** \n**Error :** `{str(e)}`")
+        await pablo.edit(f"**𝑭𝒂𝒊𝒍𝒆𝒅 𝑻𝒐 𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅** \n**Error :** `{str(e)}`")
         return
     c_time = time.time()
     capy = f"""
@@ -81,7 +81,7 @@ async def song(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"**📥 Download** `{urlissed}`",
+            f"**📥 𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅** `{urlissed}`",
             file_stark,
         ),
     )
