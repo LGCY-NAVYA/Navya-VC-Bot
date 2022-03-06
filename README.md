@@ -13,23 +13,24 @@
 - [2nd Telegram Account](https://telegram.org/blog/themes-accounts#multiple-accounts) (needed for userbot)
 
 ### Commands 🛠
-#### For all in group
-- `/play` - reply to youtube url or song file to play song
-- `/vplay` - reply to youtube url or song file to play video
-#### Admins only
-- `/pause` - pause song play
-- `/resume` - resume song play
-- `/skip` - play next song
-- `/end` - stop music play
-- `/vstop` - stop video stream
-- `/vpause` - pause video stream
-- `/vresume` - resume video stream
-- `/vskip` - skip video stream
-
-### Commands for Sudo Users ⚔️
-- /rmw - to clean storage
-- /rmd - to clean download sotrage
-
+#####(𝑨𝒏𝒚𝒐𝒏𝒆 𝒄𝒂𝒏 𝑼𝒔𝒆 𝒊𝒇 𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃𝐄 𝒊𝒔 𝒔𝒆𝒕 𝒕𝒐`𝐓𝐫𝐮𝐞`):
+`{HNDLR}play`
+`{HNDLR}vplay`
+`{HNDLR}stream` (For Radio links)
+`{HNDLR}vstream` (For .m3u8 / live links)
+`{HNDLR}playfrom [channel] ; [n]` - Plays last n songs from channel
+`{HNDLR}playlist` / `{HNDLR}queue`
+`{HNDLR}ping`
+`{HNDLR}skip`
+`{HNDLR}pause` and `{HNDLR}resume`
+`{HNDLR}stop`
+`{HNDLR}end`
+`{HNDLR}help`
+`{HNDLR}restart`
+**EXTRA COMMANDS**
+`{HNDLR}song` - Download Song from Youtube server.
+`{HNDLR}video` - Download Video from Youtube server.
+`{HNDLR}json` - Reply any message & Showing Json.
 # String Session :
 
 - [𝙇𝙂𝙘𝙔・𝙎𝙏𝙍𝙄𝙉𝙂 𝙂𝙀𝙉𝙀𝙍𝘼𝙏𝙊𝙍](https://t.me/LGcY_STRING_ROBOT)
