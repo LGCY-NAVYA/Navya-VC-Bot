@@ -5,7 +5,7 @@ from config import bot, call_py, HNDLR, contact_filter
 from plugins.vc.handlers import skip_current_song, skip_item
 from plugins.vc.queues import QUEUE, clear_queue
 
-@Client.on_message(contact_filter & filters.command(['skip', 'next', 'n', '/skip', '/next'], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(['skip', 'next', 'n', '/skip', '/next'], prefixes=f"{HNDLR}"))
 async def skip(client, m: Message):
     await m.delete()
     chat_id = m.chat.id
@@ -38,7 +38,7 @@ async def skip(client, m: Message):
             await m.reply(OP)        
       
 
-@Client.on_message(contact_filter & filters.command(['end', 'stop', '/end', '/stop', 'x'], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(['end', 'stop', '/end', '/stop', 'x'], prefixes=f"{HNDLR}"))
 async def stop(client, m: Message):
     await m.delete()
     chat_id = m.chat.id
@@ -53,7 +53,7 @@ async def stop(client, m: Message):
         await m.reply("**🤨𝑵𝒐𝒕𝒉𝒊𝒏𝒈 𝒊𝒔 𝒑𝒍𝒂𝒚𝒊𝒏𝒈 !**")
 
    
-@Client.on_message(contact_filter & filters.command(['pause', '/pause', 'wait', 'ruko'], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(['pause', '/pause', 'wait', 'ruko'], prefixes=f"{HNDLR}"))
 async def pause(client, m: Message):
     await m.delete()
     chat_id = m.chat.id
@@ -69,7 +69,7 @@ async def pause(client, m: Message):
         await m.reply("**🤨Nothing is playing!**")
       
 
-@Client.on_message(contact_filter & filters.command(['resume', 'r', '/resume'], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(['resume', 'r', '/resume'], prefixes=f"{HNDLR}"))
 async def resume(client, m: Message):
     await m.delete()
     chat_id = m.chat.id
