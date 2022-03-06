@@ -41,7 +41,7 @@ async def ping(client, m: Message):
 
 @Client.on_message(filters.command(['restart', '/restart'], prefixes=f"{HNDLR}"))
 async def restart(client, m: Message):
-   await m.reply("`Restarting...`")
+   await m.reply("𝑹𝒆𝒔𝒕𝒂𝒓𝒕𝒊𝒏𝒈...")
    os.execl(sys.executable, sys.executable, *sys.argv)
    # You probably don't need it but whatever
    quit()
@@ -52,7 +52,7 @@ async def help(client, m: Message):
 **HELP MENU 🛠**
 
 **USER COMMANDS**
-(Anyone can Use if `GROUP_MODE` is set to `True`):
+(𝑨𝒏𝒚𝒐𝒏𝒆 𝒄𝒂𝒏 𝑼𝒔𝒆 𝒊𝒇 𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃𝐄 𝒊𝒔 𝒔𝒆𝒕 𝒕𝒐`𝐓𝐫𝐮𝐞`):
 `{HNDLR}play`
 `{HNDLR}vplay`
 `{HNDLR}stream` (For Radio links)
