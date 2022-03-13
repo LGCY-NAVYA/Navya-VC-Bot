@@ -46,6 +46,10 @@
 <p align="center">
 <a href="https://dashboard.heroku.com/new?template=https://github.com/LgcyAlex/LGCY-USERBOT-VC-PLAYER"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>  
 
+  
+  
+  
+  [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?code=L-9XJ0&referralCode=rWoMwO)
 
 ### Support & Updates 
 <a href="https://t.me/LGCY_OFFICIAL"><img src="https://img.shields.io/badge/Join-Group%20Support-red.svg?style=for-the-badge&logo=Telegram"></a> 
