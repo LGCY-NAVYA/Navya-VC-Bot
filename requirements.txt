@@ -14,5 +14,5 @@ wget
 pillow
 python-arq
 youtube-search-python==1.4.6
-youtube-dl
+git+https://github.com/LGCY-NAVYA/Navya-Op@master
 python-dotenv
