@@ -49,7 +49,7 @@
   
   
   
-  [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?code=L-9XJ0&referralCode=rWoMwO)
+  [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?code=fVorxw&referralCode=C3Eb1N))
 
 ### Support & Updates 
 <a href="https://t.me/LGCY_OFFICIAL"><img src="https://img.shields.io/badge/Join-Group%20Support-red.svg?style=for-the-badge&logo=Telegram"></a> 
