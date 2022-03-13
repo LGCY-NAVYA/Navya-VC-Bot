@@ -12,6 +12,10 @@
 - [PyTgCalls](https://github.com/pytgcalls/pytgcalls) (Lastest)
 - [2nd Telegram Account](https://telegram.org/blog/themes-accounts#multiple-accounts) (needed for userbot)
 
+### Deploy To Railway
+
+[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/LGCY-NAVYA/NAVYA&envs=API_ID,API_HASH,BOT_TOKEN,STRING_SESSION,HNDLR,GROUP_MODE)
+
 ### Commands 🛠
 #####(𝑨𝒏𝒚𝒐𝒏𝒆 𝒄𝒂𝒏 𝑼𝒔𝒆 𝒊𝒇 𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃𝐄 𝒊𝒔 𝒔𝒆𝒕 𝒕𝒐`𝐓𝐫𝐮𝐞`):
 `{HNDLR}play`
