@@ -34,7 +34,6 @@
 </h2>
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?code=wDTqk0&referralCode=rWoMwO)
-
 <p align="center">
 <a href="https://dashboard.heroku.com/new?template=https://github.com/LgcyAlex/LGCY-USERBOT-VC-PLAYER"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>  
 
