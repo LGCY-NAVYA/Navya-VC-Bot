@@ -4,13 +4,7 @@
   <img src="https://telegra.ph/file/8145f7cfe1766be4ca000.jpg">
 </p>
 
-<h3>Requirements 📝</h3>
 
-- FFmpeg (Latest)
-- NodeJS [nodesource.com](https://nodesource.com/) (NodeJS 17+)
-- Python (3.10+)
-- [PyTgCalls](https://github.com/pytgcalls/pytgcalls) (Lastest)
-- [2nd Telegram Account](https://telegram.org/blog/themes-accounts#multiple-accounts)
 
 ### Commands 🛠
 #####(𝑨𝒏𝒚𝒐𝒏𝒆 𝒄𝒂𝒏 𝑼𝒔𝒆 𝒊𝒇 𝐆𝐑𝐎𝐔𝐏_𝐌𝐎𝐃𝐄 𝒊𝒔 𝒔𝒆𝒕 𝒕𝒐`𝐓𝐫𝐮𝐞`):
