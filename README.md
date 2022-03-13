@@ -39,7 +39,7 @@
    Deploy
 </h2>
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?code=fVorxw&referralCode=C3Eb1N&envs=API_ID,API_HASH,BOT_TOKEN,STRING_SESSION,HNDLR,GROUP_MODE))
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?code=fVorxw&referralCode=C3Eb1N&envs=API_ID,API_HASH,BOT_TOKEN,STRING_SESSION,HNDLR,GROUP_MODE)
 
 <p align="center">
 <a href="https://dashboard.heroku.com/new?template=https://github.com/LgcyAlex/LGCY-USERBOT-VC-PLAYER"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>  
